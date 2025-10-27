@@ -1,0 +1,5 @@
+{
+  "name": "Hackathon Developer Profile",
+  "description": "A modern, responsive web app for hackathon participants to create and showcase their developer profiles. Users can add personal details, skills, interests, and social links with a live preview.",
+  "requestFramePermissions": []
+}
