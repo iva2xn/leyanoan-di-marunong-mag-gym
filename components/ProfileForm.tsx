@@ -10,9 +10,10 @@ import Textarea from './Textarea';
 interface ProfileFormProps {
   profile: Profile;
   setProfile: React.Dispatch<React.SetStateAction<Profile>>;
+  onPreview: () => void;
 }
 
-const ProfileForm: React.FC<ProfileFormProps> = ({ profile, setProfile }) => {
+const ProfileForm: React.FC<ProfileFormProps> = ({ profile, setProfile, onPreview }) => {
   const handleChange = (field: keyof Profile, value: any) => {
     setProfile(prev => ({ ...prev, [field]: value }));
   };
@@ -108,6 +109,16 @@ const ProfileForm: React.FC<ProfileFormProps> = ({ profile, setProfile }) => {
             placeholder="https://twitter.com/username"
           />
         </div>
+      </div>
+
+      <div className="flex justify-end pt-6 border-t border-dark-border">
+        <button
+          type="button"
+          onClick={onPreview}
+          className="px-6 py-3 font-semibold text-white bg-brand-primary rounded-md hover:bg-brand-primary/90 transition-colors shadow-lg"
+        >
+          Preview Profile
+        </button>
       </div>
     </form>
   );
