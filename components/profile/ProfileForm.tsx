@@ -1,11 +1,11 @@
 
 import React from 'react';
-import type { Profile } from '../types';
-import Input from './Input';
-import TagInput from './TagInput';
-import ImageUpload from './ImageUpload';
-import { ICONS } from '../constants';
-import Textarea from './Textarea';
+import type { Profile } from '../../types';
+import Input from '../ui/Input';
+import TagInput from '../ui/TagInput';
+import ImageUpload from '../ui/ImageUpload';
+import Textarea from '../ui/Textarea';
+import { ICONS } from '../../constants';
 
 interface ProfileFormProps {
   profile: Profile;

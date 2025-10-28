@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import type { Profile } from './types';
-import ProfileForm from './components/ProfileForm';
-import ProfileCard from './components/ProfileCard';
-import PreviewModal from './components/PreviewModal';
+import ProfileForm from './components/profile/ProfileForm';
+import ProfileCard from './components/profile/ProfileCard';
+import PreviewModal from './components/profile/PreviewModal';
 
 const initialProfile: Profile = {
   username: 'janedev',

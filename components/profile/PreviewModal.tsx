@@ -1,6 +1,6 @@
 
 import React from 'react';
-import type { Profile } from '../types';
+import type { Profile } from '../../types';
 import ProfileCard from './ProfileCard';
 
 interface PreviewModalProps {

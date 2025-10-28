@@ -1,7 +1,7 @@
 
 import React from 'react';
-import type { Profile } from '../types';
-import { ICONS } from '../constants';
+import type { Profile } from '../../types';
+import { ICONS } from '../../constants';
 
 interface ProfileCardProps {
   profile: Profile;
